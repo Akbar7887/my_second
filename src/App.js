@@ -2,8 +2,12 @@ import React from "react";
 import './img/logo.svg';
 import Header from "./components/Header";
 import Menuleft from "./components/Menuleft";
-import KompleksPage from "./components/KompleksPage";
 import axios from "axios";
+import KompleksDetails from "./pages/KompleksDetails";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import KompleksPage from "./pages/KompleksPage";
+
+
 
 
 class App extends React.Component {
@@ -24,8 +28,13 @@ class App extends React.Component {
         return (
             <div className="App">
                 <Header hiden={this.state.hiden} onClickMenu={this.onClickMenu}/>
-                <Menuleft hiden={this.state.hiden}/>
-                <KompleksPage kompleks={this.state.kompleks}/>
+                {/*<Menuleft hiden={this.state.hiden}/>*/}
+                <BrowserRouter>
+                    <Routes>
+                        <Route index element={<KompleksPage kompleks={this.state.kompleks}/>}></Route>
+                        <Route path="/kompleksdetails" element={<KompleksDetails/>}></Route>
+                    </Routes>
+                </BrowserRouter>
             </div>
         );
     }
@@ -34,7 +43,6 @@ class App extends React.Component {
         return this.setState(
             {
                 hiden: !this.state.hiden
-
             }
         )
     }
