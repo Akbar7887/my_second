@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import './css/main.css'
 import './css/menuleft.css'
 import './css/kompleks.css'
+import './css/kompleksdetails.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

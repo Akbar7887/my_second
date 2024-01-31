@@ -1,0 +1,40 @@
+.container-slider::before{
+    display: flex;
+
+
+}
+
+.slider {
+    /*flex-wrap: wrap;*/
+
+    /*!*display: flow;*!*/
+    /*position: center;*/
+    /*opacity: 1;*/
+    /*transition: opacity ease-in-out 0.4s;*/
+}
+ img {
+    /*margin: 10px;*/
+    /*padding: 10px;*/
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.leftside {
+    display: flex;
+
+    height: 400px;
+    overflow: hidden;
+}
+
+.rightside {
+
+    display: flex;
+    height: 400px;
+
+}
+.active-anim{
+    opacity: 1;
+}
+
+

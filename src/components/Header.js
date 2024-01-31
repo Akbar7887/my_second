@@ -11,19 +11,17 @@ class Header extends React.Component {
                 <div className="container">
 
                     <div className="logosection">
-                        <img className="img" src="/logo512.png" alt="Logo"  onClick={() => !this.props.onClickMenu()}/>
-
+                        <img className="img" src="/logo512.png" alt="Logo" onClick={() => !this.props.onClickMenu()}/>
                     </div>
-
-
-                    <section className="nav">
-                        <a href="/main">Главное</a>
-                        <a href="/catalog">Каталог</a>
-                        <a href="/production">Производство</a>
-                        <a href="/news">Новости</a>
-                        <a href="/privateroom">Личный кабинет</a>
-                    </section>
-
+                    <div className="nav">
+                        <ul>
+                            <li ref="/main">Главное</li>
+                            <li ref="/catalog">Каталог</li>
+                            <li ref="/production">Производство</li>
+                            <li ref="/news">Новости</li>
+                            <li ref="/privateroom">Личный кабинет</li>
+                        </ul>
+                    </div>
                 </div>
 
             </header>

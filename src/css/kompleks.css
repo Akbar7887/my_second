@@ -1,4 +1,14 @@
+.kompleks{
 
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0;
+    display: grid;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    /*grid-gap: 20px;*/
+    /*position: inherit;*/
+}
 .card {
     height: 300px;
     width: 100%;
@@ -52,8 +62,7 @@ a {
 }
 
 .total h2 {
-    text-justify: auto;
-
+    padding-top: 80px;
 }
 
 .imgleft {
