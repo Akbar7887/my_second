@@ -22,7 +22,6 @@
 
 .leftside {
     display: flex;
-
     height: 400px;
     overflow: hidden;
 }

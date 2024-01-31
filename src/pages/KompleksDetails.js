@@ -14,6 +14,7 @@ export default function KompleksDetails() {
     const prevSlide = () => {
 
     }
+
     // console.log(location);
     return (<div class="main" className="container-slider">
 
@@ -27,7 +28,6 @@ export default function KompleksDetails() {
         <Button classname="btn-right">
             <FaAngleRight className="rightside"></FaAngleRight>
         </Button>
-
 
     </div>);
 
