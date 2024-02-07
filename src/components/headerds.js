@@ -3,17 +3,14 @@ import Menuleft from "./Menuleft";
 
 // import logo from './src/img/logo.svg';
 
-class Header extends React.Component {
+class Headerds extends React.Component {
 
     render() {
         return (
             <header>
-                <div className="container">
-
-                    <div className="logosection">
-                        <img className="img" src="/logo512.png" alt="Logo" onClick={() => !this.props.onClickMenu()}/>
-                    </div>
-                    <div className="nav">
+                <div class="navbar">
+                    <img className="imgheader" src="/logo512.png" alt="Logo" onClick={() => !this.props.onClickMenu()}/>
+                    <nav className="nav">
                         <ul>
                             <li ref="/main">Главное</li>
                             <li ref="/catalog">Каталог</li>
@@ -21,9 +18,8 @@ class Header extends React.Component {
                             <li ref="/news">Новости</li>
                             <li ref="/privateroom">Личный кабинет</li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
-
             </header>
 
 
@@ -32,4 +28,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header
+export default Headerds

@@ -1,6 +1,6 @@
 import React from "react";
 import './img/logo.svg';
-import Header from "./components/Header";
+import Headerds from "./components/headerds";
 
 import axios from "axios";
 import KompleksDetails from "./pages/KompleksDetails";
@@ -24,11 +24,10 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="App">
-                    <Header hiden={this.state.hiden} onClickMenu={this.onClickMenu}/>
-                {/*<Menuleft hiden={this.state.hiden}/>*/}
+            <div class="App">
+                <Headerds hiden={this.state.hiden} onClickMenu={this.onClickMenu}></Headerds>
                 <main>
-                    <BrowserRouter class="main">
+                    <BrowserRouter>
                         <Routes>
                             <Route index element={<KompleksPage kompleks={this.state.kompleks}/>}></Route>
                             <Route path="/kompleksdetails" element={<KompleksDetails/>}></Route>
@@ -36,7 +35,7 @@ class App extends React.Component {
                     </BrowserRouter>
                 </main>
 
-
+s
             </div>
         );
     }
