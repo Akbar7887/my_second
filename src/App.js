@@ -14,13 +14,16 @@ class App extends React.Component {
 
         this.state = {
             hiden: true,
-            kompleks: []
+            kompleks: [],
+
         }
         if (!axios.get("http://api.dsk.uz:8089/kompleks/v1/get").then((res) => (
             this.setState({kompleks: res.data})
         )))
             this.onClickMenu = this.onClickMenu.bind(this)
     }
+
+
 
     render() {
         return (
@@ -30,7 +33,7 @@ class App extends React.Component {
                     <BrowserRouter>
                         <Routes>
                             <Route index element={<KompleksPage kompleks={this.state.kompleks}/>}></Route>
-                            <Route path="/kompleksdetails" element={<KompleksDetails/>}></Route>
+                            <Route path="/kompleksdetails" element={<KompleksDetails />}></Route>
                         </Routes>
                     </BrowserRouter>
                 </main>
