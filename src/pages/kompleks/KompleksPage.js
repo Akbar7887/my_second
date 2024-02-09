@@ -1,6 +1,6 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
-import '../css/kompleks.css'
+import '../../css/komleks/kompleks.css'
 import {Card} from "@mui/material";
 
 

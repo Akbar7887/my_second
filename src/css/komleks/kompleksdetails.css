@@ -1,0 +1,85 @@
+.slideStyles {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 30% auto;
+    column-gap: 20px;
+    padding-top: 20px;
+}
+
+.column1 {
+    position: relative;
+    padding: 40px 40px 80px 40px;
+    height: 100%;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+
+}
+.column1 h4{
+    padding-top: 40px;
+    font-size: 20px;
+}
+.column1 h3{
+    font-size: 25px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+}
+
+.column2 {
+    position: relative;
+    padding-top: 20px;
+    right: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.leftArrowStyles {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 50%;
+    left: 30px;
+    font-size: 45px;
+    color: white;
+    z-Index: 1;
+    cursor: pointer;
+}
+
+.rightArrowStyles {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    transform: translate(0, -50%);
+    right: 30px;
+    font-size: 45px;
+    color: white;
+    z-Index: 1;
+    cursor: pointer;
+}
+
+.dotStyle {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    /*right: 50%;*/
+    margin: 15px;
+    width: 2px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/*.dotsContainerStyles {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+

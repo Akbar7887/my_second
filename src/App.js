@@ -3,9 +3,9 @@ import './img/logo.svg';
 import Headerds from "./components/headerds";
 
 import axios from "axios";
-import KompleksDetails from "./pages/KompleksDetails";
+import KompleksDetails from "./pages/kompleks/KompleksDetails";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import KompleksPage from "./pages/KompleksPage";
+import KompleksPage from "./pages/kompleks/KompleksPage";
 
 
 class App extends React.Component {
